@@ -58,7 +58,7 @@ def critic_score(z:np.ndarray ,x: np.ndarray, w: np.ndarray, metric = 'rbf', alp
     
     return witness_scores + alpha*np.linalg.slogdet(pairwise_kernels(w,w,metric = metric))[1]
 
-def find_prototypes(x: np.ndarray,m: int, record = False):
+def find_prototypes(x: np.ndarray,m: int, record = False, metric = 'rbf'):
     
     '''
     Grid Search to find the prototypes in the dataset
