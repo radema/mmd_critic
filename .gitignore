@@ -1,2 +1,2 @@
-build/*
-mmdcritic.egg-info/*
+build/
+mmdcritic.egg-info/
